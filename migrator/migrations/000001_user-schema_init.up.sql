@@ -34,8 +34,6 @@ VALUES
  '+380 (68) 306-29-75',
  3
 );
-INSERT INTO carts (user_id)
-VALUES ((SELECT id FROM users WHERE email = 'zhovtyjshady@gmail.com'));
 
 INSERT INTO users
     (email, password_hash, lastname, firstname, middle_name, phone_number, role_id)
@@ -49,6 +47,3 @@ VALUES
  '+380 (96) 612-15-16',
  3
 );
-
-INSERT INTO carts (user_id)
-VALUES ((SELECT id FROM users WHERE email = 'azipro10@gmail.com'));
