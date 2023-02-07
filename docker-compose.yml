@@ -67,7 +67,7 @@ services:
 
   db:
     restart: always
-    image: postgres:latest-alpine
+    image: postgres:15-alpine
     volumes:
       - ./.database/postgres/data:/var/lib/postgres/data
     environment:
