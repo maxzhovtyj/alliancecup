@@ -26,3 +26,10 @@ docker build -t app-migrator .
 ```
 docker run --network host app-migrator -path=/migrations -database "postgresql://postgres:30042003@localhost:5436/postgres sslmode=disable" up
 ```
+
+---
+
+### Clone submodules
+```
+git submodule update --init --recursive
+```
