@@ -33,4 +33,22 @@ VALUES
  'В''ячеславович',
  '+380 (68) 306-29-75',
  3
-)
+);
+INSERT INTO carts (user_id)
+VALUES ((SELECT id FROM users WHERE email = 'zhovtyjshady@gmail.com'));
+
+INSERT INTO users
+    (email, password_hash, lastname, firstname, middle_name, phone_number, role_id)
+VALUES
+(
+ 'azipro10@gmail.com',
+ '647361646b617364693231323331326d646d61636d787a3030986d159a9b6e949a427b2349050a89547f2351f1',
+ 'Кривко',
+ 'Вадим',
+ 'Борисович',
+ '+380 (96) 612-15-16',
+ 3
+);
+
+INSERT INTO carts (user_id)
+VALUES ((SELECT id FROM users WHERE email = 'azipro10@gmail.com'));
