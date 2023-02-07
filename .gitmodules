@@ -1,6 +1,0 @@
-[submodule "allincecup-server"]
-	path = allincecup-server
-	url = git@github.com:maxzhovtyj/allincecup-server.git
-[submodule "allincecup-client"]
-	path = allincecup-client
-	url = git@github.com:maxzhovtyj/allincecup-client.git
