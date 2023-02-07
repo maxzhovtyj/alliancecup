@@ -5,6 +5,8 @@ services:
     build: ./alliancecup-client
     ports:
       - "3000:3000"
+    environment:
+      - NODE_ENV=production
     stdin_open: true
     tty: true
 
@@ -22,6 +24,7 @@ services:
         condition: service_healthy
     environment:
       - DB_PASSWORD=30042003
+      - GIN_MODE=release
 
   minio:
     image: minio/minio
