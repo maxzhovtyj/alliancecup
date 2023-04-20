@@ -2,5 +2,5 @@
 .idea
 .env
 info
-alliancecup-client/
-alliancecup-server/
+alliancecup-client
+alliancecup-server
